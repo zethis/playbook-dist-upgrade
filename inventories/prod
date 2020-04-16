@@ -1,0 +1,10 @@
+all:
+  hosts:
+    server.example.com:
+       ansible_port: 2233
+    server2.example.com:
+    server3.example.com:
+       ansible_port: 2323
+  vars:
+    #TO USE PYTHON3 BY DEFAULT
+    ansible_python_interpreter: "/usr/bin/python3"
