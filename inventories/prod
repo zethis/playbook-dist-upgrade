@@ -1,7 +1,10 @@
 all:
   hosts:
     server.example.com:
+       #ansible_port means ssh port, by default is 22.
        ansible_port: 2233
+       #change user for playing the upgrade, by default is root.
+       remote_user: user1
     server2.example.com:
     server3.example.com:
        ansible_port: 2323
